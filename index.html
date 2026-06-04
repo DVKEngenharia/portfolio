@@ -244,19 +244,37 @@ body {
 .partners {
   display:flex;
   flex-wrap:wrap;
-  gap:8px;
+  gap:12px;
   margin-top:20px;
+  align-items:center;
 }
 .partner-chip {
-  background:rgba(255,255,255,0.06);
+  background:rgba(255,255,255,0.05);
   border:1px solid rgba(255,255,255,0.12);
-  color:rgba(255,255,255,0.7);
-  font-size:11px;
-  font-weight:600;
-  padding:7px 13px;
-  border-radius:2px;
-  letter-spacing:0.8px;
+  border-radius:3px;
+  padding:8px 16px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  transition:background 0.2s, border-color 0.2s;
+}
+.partner-chip:hover {
+  background:rgba(255,255,255,0.1);
+  border-color:rgba(255,255,255,0.25);
+}
+.partner-chip .pc-name {
+  font-size:12px;
+  font-weight:700;
+  color:rgba(255,255,255,0.85);
+  letter-spacing:0.6px;
   text-transform:uppercase;
+}
+.partner-chip .pc-type {
+  font-size:10px;
+  font-weight:400;
+  color:rgba(255,255,255,0.38);
+  letter-spacing:0.3px;
 }
 
 /* ── SERVIÇOS ── */
@@ -550,13 +568,30 @@ body {
   <div class="reveal" style="margin-top:28px;">
     <div class="s-tag">Fabricantes parceiros</div>
     <div class="partners">
-      <div class="partner-chip">Sungrow</div>
-      <div class="partner-chip">OSDA Solar</div>
-      <div class="partner-chip">Growatt</div>
-      <div class="partner-chip">Trina Solar</div>
-      <div class="partner-chip">JA Solar</div>
-      <div class="partner-chip">Hoymiles</div>
-      <div class="partner-chip">Clamper</div>
+      <a class="partner-chip" href="https://br.sungrowpower.com/" target="_blank" rel="noopener">
+        <span class="pc-name">Sungrow</span><span class="pc-type">Inversor</span>
+      </a>
+      <a class="partner-chip" href="https://www.solisinverters.com/br" target="_blank" rel="noopener">
+        <span class="pc-name">Solis</span><span class="pc-type">Inversor</span>
+      </a>
+      <a class="partner-chip" href="https://solar.huawei.com/br/" target="_blank" rel="noopener">
+        <span class="pc-name">Huawei</span><span class="pc-type">Inversor</span>
+      </a>
+      <a class="partner-chip" href="https://www.hoymiles.com/" target="_blank" rel="noopener">
+        <span class="pc-name">Hoymiles</span><span class="pc-type">Microinversor</span>
+      </a>
+      <a class="partner-chip" href="https://www.dmegcsolar.com/" target="_blank" rel="noopener">
+        <span class="pc-name">DMEGC Solar</span><span class="pc-type">Módulo</span>
+      </a>
+      <a class="partner-chip" href="https://www.jinkosolars-ah.com/" target="_blank" rel="noopener">
+        <span class="pc-name">Jinko Solar</span><span class="pc-type">Módulo</span>
+      </a>
+      <a class="partner-chip" href="https://www.longi.com/br/" target="_blank" rel="noopener">
+        <span class="pc-name">LONGi</span><span class="pc-type">Módulo</span>
+      </a>
+      <a class="partner-chip" href="https://www.jasolar.eu/pt/" target="_blank" rel="noopener">
+        <span class="pc-name">JA Solar</span><span class="pc-type">Módulo</span>
+      </a>
     </div>
   </div>
 </section>
@@ -629,7 +664,7 @@ body {
       </div>
 
       <div class="proj-result">
-        <strong>Equipamentos:</strong> 20 módulos OSDA 610Wp + Inversor Sungrow SG9.0RS 9kW. Economia acumulada de <strong>R$&nbsp;131.633</strong> em 20 anos. CO₂ evitado: <strong>6,6&nbsp;t/ano</strong>.
+        <strong>Equipamentos:</strong> 20 módulos 610Wp + Inversor Sungrow SG9.0RS 9kW. Economia acumulada de <strong>R$&nbsp;131.633</strong> em 20 anos. CO₂ evitado: <strong>6,6&nbsp;t/ano</strong>.
       </div>
     </div>
   </div>
